@@ -1,0 +1,48 @@
+.skills {
+  padding: 7rem 10rem;
+  margin: 0 auto;
+
+  &__heading {
+    margin-left: 33%;
+  }
+
+  &__cards {
+    display: grid;
+    padding: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20rem;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__card:nth-child(2) {
+    border-right: 2px dotted $color-secondary;
+    border-left: 2px dotted $color-secondary;
+    width: 100%;
+  }
+
+  &__card-svg {
+    display: block;
+    width: 83px;
+    height: 83px;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  &__card-svg--wide {
+    width: 110px;
+  }
+  &__card-title,
+  &__card-text {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  &__card-title {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    color: $color-secondary;
+  }
+}

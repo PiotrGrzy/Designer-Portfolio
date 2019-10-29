@@ -1,0 +1,61 @@
+.contact {
+  &__wrapper {
+    padding: 0 10rem;
+    display: flex;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $color-secondary;
+    padding: 4rem 5rem;
+    flex: 5;
+    color: #ffffff;
+    font-size: 1.8rem;
+  }
+
+  &__svg {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 4rem;
+  }
+
+  &__text {
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+    max-width: 70%;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 1rem;
+    fill: none !important;
+
+    path {
+      fill: none !important;
+    }
+  }
+
+  &__adress {
+    span {
+      display: block;
+      line-height: 2.5rem;
+      letter-spacing: 0.02em;
+    }
+    a {
+      color: inherit;
+    }
+  }
+
+  &__form-box {
+    flex: 7;
+  }
+}

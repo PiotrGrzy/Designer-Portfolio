@@ -1,0 +1,101 @@
+.header {
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 4rem 2rem 6rem;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo span {
+    font-size: 2.4rem;
+    letter-spacing: 5px;
+    font-weight: 700;
+    margin-left: 1rem;
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $color-primary;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 4rem;
+  }
+
+  &__svg {
+    display: block;
+    width: 36px;
+    height: 32px;
+  }
+
+  &__hero {
+    position: relative;
+    height: 58rem;
+    background-image: url("../assets/photos/hero-layer.png"),
+      url("../assets/photos/hero.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__hero-text {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__hero-text h1 {
+    font-size: 10rem;
+    color: $color-secondary;
+    font-weight: 700;
+  }
+
+  &__hero-text h3 {
+    font-size: 3.6rem;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  &__hero-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  &__hero-link {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 1rem;
+  }
+
+  &__sub {
+    padding: 6rem;
+  }
+  &__sub-heading {
+    font-size: 3.6rem;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 3.6rem;
+  }
+  &__sub-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+    justify-items: start;
+  }
+
+  &__sub-btns .btn:first-child {
+    justify-self: end;
+  }
+}
