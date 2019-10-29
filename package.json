@@ -1,0 +1,22 @@
+{
+  "name": "projekt1",
+  "version": "1.0.0",
+  "description": "Designer Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiotrGrzy/Designer-Portfolio.git"
+  },
+  "author": "Piotr Grzymowicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiotrGrzy/Designer-Portfolio/issues"
+  },
+  "homepage": "https://github.com/PiotrGrzy/Designer-Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
