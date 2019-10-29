@@ -2,6 +2,10 @@
   padding: 7rem 10rem;
   margin: 0 auto;
 
+  @media screen and (max-width: $tablet) {
+    padding: 3rem 2rem;
+  }
+
   &__heading {
     margin-left: 33%;
   }
@@ -10,16 +14,27 @@
     display: grid;
     padding: 4rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 20rem;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-items: center;
+
+    @media screen and (max-width: $phone) {
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+    }
   }
 
   &__card:nth-child(2) {
     border-right: 2px dotted $color-secondary;
     border-left: 2px dotted $color-secondary;
     width: 100%;
+
+    @media screen and (max-width: $phone) {
+      border: none;
+      border-top: 2px dotted $color-secondary;
+      border-bottom: 2px dotted $color-secondary;
+      padding: 2rem 0;
+    }
   }
 
   &__card-svg {

@@ -23,10 +23,16 @@
                 <ul class="header__menu">
                     <li class="header__item"><a href="#about" class="header__link">About me</a></li>
                     <li class="header__item"><a href="#skills" class="header__link">Skills</a></li>
-                    <li class="header__item"><a href="#portfolio" class="header__link">Postfolio</a></li>
+                    <li class="header__item"><a href="#portfolio" class="header__link">Portfolio</a></li>
                     <li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
                 </ul>
+                <button class="mobile-nav-trigger">
+                    <span class="mobile-nav-trigger__box">
+                        <span class="mobile-nav-trigger__inner"></span>
+                    </span>
+                </button>
             </nav>
+
             <div class="header__hero">
                 <div class="header__hero-text">
                     <h1>Welcome!</h1>
@@ -55,7 +61,7 @@
                 </div>
             </div>
         </header>
-        <section class="about">
+        <section class="about" id="about">
             <h2 class="heading about__heading">About me</h2>
             <div class="about__info">
                 <div class="about__img">
@@ -69,7 +75,7 @@
                         <li class="about__bio-item">Telephone: <span class="about__bio-value">+48 123-456-789</span>
                         </li>
                         <li class="about__bio-item">E-mail: <span class="about__bio-value"><a
-                                    href="mailto=night-coding@dev.com">night-coding@dev.com</a> </span>
+                                    href="mailto:night-coding@dev.com">night-coding@dev.com</a> </span>
                         </li>
                     </ul>
                 </div>
@@ -83,7 +89,7 @@
 
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2 class="heading skills__heading">Skills</h2>
             <div class="skills__cards">
                 <div class="skills__card">
@@ -110,7 +116,7 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2 class="heading portfolio__heading">Portfolio</h2>
             <div class="portfolio__gallery">
                 <div class="portfolio__item portfolio__item--1">
@@ -134,7 +140,7 @@
                 <div class="portfolio__item portfolio__item--5">
                     <img src="assets/photos/portfolio-5.jpg" alt="" class="portfolio__img">
                     <div class="portfolio__item-layer">
-                        <h2>Design</h2>
+                        <h2>Design project</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident expedita nemo at
                             quibusdam enim.</p>
                         <div class="btn">View</div>
@@ -142,7 +148,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2 class="heading contact__heading">Contact us</h2>
             <div class="contact__wrapper">
                 <div class="contact__info">
@@ -177,12 +183,12 @@
                     </div>
                 </div>
                 <div class="contact__form-box">
-                    <h3>Let's Start!</h3>
+                    <h3 class="contact__form-heading">Let's Start!</h3>
                     <form action="submit" class="contact__form">
                         <input class="contact__input" type="text" placeholder="Name">
                         <input class="contact__input" type="email" placeholder="Your e-mail adress">
                         <input class="contact__input" type="text" placeholder="Topic">
-                        <textarea class="contact__input" name="msg" id="" cols="30" rows="10"
+                        <textarea class="contact__input contact__input--area" name="msg" id="" rows="1"
                             placeholder="Message"></textarea>
                         <button class="btn">Send</button>
                     </form>
@@ -190,7 +196,7 @@
             </div>
         </section>
         <footer class="footer">
-            <span>Copyright &copy; 2019 CodersCrew</span>
+            <span class="footer_copy">Copyright &copy; 2019 CodersCrew</span>
         </footer>
 
     </div>

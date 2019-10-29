@@ -1,0 +1,49 @@
+@mixin trigger-line {
+  width: 100%;
+  height: 2px;
+  background-color: #515151;
+  position: absolute;
+}
+
+.mobile-nav-trigger {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  display: none;
+  @media screen and (max-width: $phone) {
+    display: inline-block;
+  }
+
+  &__box {
+    width: 35px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+
+  &__inner {
+    @include trigger-line;
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__inner::before,
+  &__inner::after {
+    @include trigger-line;
+
+    content: "";
+    left: 0;
+  }
+
+  &__inner::before {
+    top: -10px;
+  }
+
+  &__inner::after {
+    top: 10px;
+  }
+}

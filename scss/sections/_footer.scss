@@ -1,2 +1,9 @@
 .footer {
+  padding: 3rem;
+  text-align: center;
+
+  &__copy {
+    font-family: $font-secondary;
+    font-size: 1.4rem;
+  }
 }
