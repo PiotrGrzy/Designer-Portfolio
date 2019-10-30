@@ -33,6 +33,13 @@
     font-size: 2rem;
     font-weight: 700;
     margin-right: 4rem;
+    transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+  }
+
+  &__link:hover {
+    @include grow;
+    border-bottom: 2px solid $color-primary;
   }
 
   &__svg {
@@ -85,6 +92,11 @@
     width: 25px;
     height: 25px;
     margin: 1rem;
+    transition: all 0.2s;
+  }
+
+  &__hero-link:hover {
+    @include grow;
   }
 
   &__sub {
@@ -104,12 +116,23 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 8rem;
     justify-items: start;
+
     @media screen and (max-width: $phone) {
       column-gap: 2rem;
+    }
+    @media screen and (max-width: $phone-xs) {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+      justify-items: normal;
     }
   }
 
   &__sub-btns .btn:first-child {
     justify-self: end;
+    animation: shake 3s infinite;
+
+    @media screen and (max-width: $phone-xs) {
+      justify-self: normal;
+    }
   }
 }

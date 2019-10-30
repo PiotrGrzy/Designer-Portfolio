@@ -49,6 +49,11 @@
     width: 25px;
     height: 25px;
     margin: 1rem;
+    transition: all 0.2s;
+  }
+
+  &__link:hover {
+    @include grow;
   }
 
   &__adress {
@@ -59,6 +64,9 @@
     }
     a {
       color: inherit;
+    }
+    @media screen and (max-width: $phone) {
+      margin-top: 4rem;
     }
   }
 
